@@ -1,0 +1,23 @@
+[general]
+status_path = "~/.local/vdirsyncer/status/"
+
+[pair calendar]
+a = "cal_local"
+b = "cal"
+collections = ["from a", "from b"]
+metadata = ["color"]
+
+[storage cal_local]
+type = "filesystem"
+path = "~/.local/calendar"
+fileext = ".ics"
+
+[storage cal]
+type = "caldav"
+url = "TODO"
+username = "TODO"
+password = "TODO"
+
+[storage card]
+type = "carddav"
+url = "TODO"
