@@ -65,7 +65,7 @@ set $term foot
 set $menu fuzzel | xargs swaymsg exec --
 
 ## Output configuration
-output     *   bg      $HOME/Bilder/.wallpaper.jpeg stretch
+output * bg $HOME/.dotfiles/.images/wallpaper.jpeg stretch
 
 # Behavior
 focus_follows_mouse no
