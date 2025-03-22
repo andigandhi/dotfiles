@@ -35,7 +35,7 @@ input "1739:52545:SYNA7DB5:01_06CB:CD41_Touchpad" {
 input type:keyboard xkb_numlock enabled
 
 input type:keyboard {
-    xkb_layout de
+    xkb_layout de,us
     xkb_options grp:rctrl_toggle
 }
 
@@ -64,7 +64,7 @@ set $term foot
 # set 	$menu 	j4-dmenu-desktop --no-generic --dmenu="bemenu -i --prompt 'search' " | xargs swaymsg exec --
 set $menu fuzzel | xargs swaymsg exec --
 
-## Output configuration
+# Output configuration
 output * bg $HOME/.dotfiles/.images/wallpaper.jpeg stretch
 
 # Behavior
@@ -101,6 +101,9 @@ floating_modifier $mod normal
 
 # reload the configuration file
 bindsym $mod+r reload
+
+# Toggle Keyboard Layout
+bindsym $mod+Control_R input "1:1:AT_Translated_Set_2_keyboard" xkb_switch_layout next
 
 # Moving around:
 # Move your focus around

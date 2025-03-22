@@ -8,6 +8,7 @@
     "temperature",
     "network",
     "custom/vpn",
+    "sway/language",
     "pulseaudio",
     "battery",
   ],
@@ -33,6 +34,11 @@
       "urgent": "",
       "focused": "",
     },
+  },
+  "sway/language": {
+    "format": " {}",
+    "format-de": "DE",
+    "format-us": "EN",
   },
   "custom/vpn": {
     "format": "{}",
