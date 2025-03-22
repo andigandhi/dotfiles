@@ -8,7 +8,8 @@ sudo apt --yes --force-yes install git
 git clone https://github.com/andigandhi/dotfiles $HOME/.dotfiles
 
 # Install dependencies using apt
-sudo apt --yes --force-yes install sway waybar swaylock fuzzel mako-notifier zathura light zathura-pdf-poppler ssh-askpass lsd udiskie imagemagick zsh pipewire pipewire-pulse pavucontrol
+sudo apt --yes --force-yes install sway waybar swaylock fuzzel mako-notifier zathura light zathura-pdf-poppler ssh-askpass lsd udiskie imagemagick zsh
+sudo apt --yes --force-yes pipewire pipewire-pulse pavucontrol blueman
 
 # install zed
 curl -f https://zed.dev/install.sh | sh
