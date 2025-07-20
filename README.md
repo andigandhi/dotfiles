@@ -1,7 +1,7 @@
 # dotfiles
 My dotfiles and system configuration for my Debian Sway setup.
 
-![Screenshot](.images/screenshot.jpeg)
+![Screenshot](.images/screenshot.png)
 
 ## Installation
 
@@ -27,4 +27,5 @@ The following are the programs used in this setup:
 
 ## Credits
 - Base Configs: [Lokesh Krishna's dotfiles](https://github.com/lokesh-krishna/dotfiles)
+- Backgound Image: [Dreamypixel](https://dreamypixel.com/kamnik-alps-sunset/)
 - Font: [Forma DJR Mono](https://djr.com/forma-mono)
