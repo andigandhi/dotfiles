@@ -16,6 +16,32 @@ client.focused_inactive #A4B9EF     #332E41     #E5B4E2     #DADAE8     #A4B9EF
 client.unfocused        #A4B9EF     #1E1E28     #DADAE8     #DADAE8     #575268
 client.urgent           #A4B9EF     #575268     #EBDDAA     #DADAE8     #EBDDAA
 
+# Special Windows
+# Definitions
+set {
+	$ii inhibit_idle focus
+	$popup floating enable; border pixel 1; sticky enable; shadows enable
+	$float floating enable; border pixel 1; shadows enable
+	$video inhibit_idle fullscreen; border none; max_render_time off
+	$important inhibit_idle open; floating enable; border pixel 1
+	$max inhibit_idle visible; floating enable; sticky enable; border pixel 1
+}
+# App Rules
+for_window {
+	[app_id="pavucontrol"] $float
+	[title="Extension: (Bitwarden Password Manager)*"] $float
+	[app_id="xdg-desktop-portal-gtk"] $float
+	[window_type="dialog"] $float; shadows enable
+	[window_type="utility"] $float; shadows enable
+	[window_type="toolbar"] $float; shadows enable
+	[window_type="splash"] $float; shadows enable
+	[window_type="menu"] $float; shadows enable
+	[window_type="dropdown_menu"] $float; shadows enable
+	[window_type="popup_menu"] $float; shadows enable
+	[window_type="tooltip"] $float; shadows enable
+	[window_type="notification"] $float; shadows enable
+}
+
 # import GTK settings
 exec_always $HOME/bin/import-gsettings.sh \
 	gtk-theme:gtk-theme-name \
